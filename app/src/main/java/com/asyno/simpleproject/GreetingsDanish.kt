@@ -2,10 +2,9 @@ package com.asyno.simpleproject
 
 import java.util.*
 
-class Greetings {
-
+class GreetingsDanish {
     private val generator = Random()
-    val greetingText = arrayOf("Hello", "Hey", "Dear", "Have a nice day")
+    val greetingText = arrayOf("Godmorgen", "Godaften", "Godeftermiddag", "Tillykke Med Fødselsdagen")
 
     public fun get(): String {
         val idx = generator.nextInt(greetingText.size)
