@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +33,10 @@ class MainActivity : AppCompatActivity() {
         val maleView = findViewById<ImageView>(R.id.imageMale)
         val femaleView = findViewById<ImageView>(R.id.imageFemale)
         val etName = findViewById<EditText>(R.id.etName)
-        val tvHeader = findViewById<TextView>(R.id.tvHeader)
+
+        //val tvHeader = findViewById<TextView>(R.id.tvHeader)
+        val tvHeader = tvHeader
+
         val grENG = mGreetingsEnglish.get()
 
         val name = etName.text.toString()
